@@ -1,0 +1,17 @@
+<h2>EN VRAC!</h2>
+<ul class="activites">
+  <li *ngFor="let activite of activites.content">
+    <div class="card" style="width: 35rem;">
+      <a href="activite/{{ activite.idActivite }}">
+      <img class="card-img-top" src="{{ activite.urlImageActivite }}" alt="{{ activite.nomActivite }}">
+      </a>
+      <div class="card-body">
+        <a href="activite/{{ activite.idActivite }}">
+          <h3 class="card-title">{{ activite.nomActivite }}</h3>
+          <p class="card-text">{{ activite.dateActivite }}</p>
+        </a>  
+      </div>
+    </div>
+  </li>
+</ul>
+

@@ -1,0 +1,23 @@
+<h2>Mes favoris</h2>
+<p>Choisis tes types d'acitvités préférés!</p>
+<p>Tu peux en choisir jusqu'à trois différents!</p>
+<div class="userTags">
+  <h2>Mes favoris</h2>
+  <ul class="tagList">
+      <li *ngFor="let tag of tags">
+          <p>{{ tag.intituleTag }}</p> 
+          <a href="profil/deleteTag/{{ tag.idTag }}">x</a>    
+      </li>
+  </ul>
+</div>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Ajouter un Favori</label>
+    <select class="form-control" id="exampleFormControlSelect1" formControlName="selectedTag">    
+      <option *ngFor="let tag of fullTags" value="{{ tag.idTag }}">{{ tag.intituleTag }}</option>    
+    </select>
+  </div>
+  <div class="form-group">
+      <button class="btn btn-primary">Valider</button>
+  </div>
+</form>

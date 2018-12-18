@@ -1,0 +1,30 @@
+li {
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.activites {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 26rem;
+    height: 26rem;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
