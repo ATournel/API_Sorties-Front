@@ -1,14 +1,14 @@
-.cardActi {
+.card-body {
+    text-align: center;
+}
+
+.content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-img {
-    width: 35vw;
-    height: auto;
-}
-
-.infoActi {
-    width: 35vw;
+.description {
+    margin-top: 5rem;
+    width: 50rem;
 }

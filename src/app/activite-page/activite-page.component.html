@@ -1,8 +1,12 @@
-<div class="cardActi">
-  <img src="{{ activite.urlImageActivite }}">
-  <div class="infoActi">
-    <h2>{{ activite.nomActivite }}</h2>
-    <p>{{ activite.dateActivite }}</p>
+<div class="content">
+  <div class="card" style="width: 50rem;">
+    <img class="card-img-top" src="{{ activite.urlImageActivite }}">
+    <div class="card-body">
+      <h2 class="card-title">{{ activite.nomActivite }}</h2>
+      <p class="card-text">{{ activite.dateActivite }}</p>
+    </div>
+  </div>
+  <div class="description">  
     <p>{{ activite.descriptionActivite }}</p>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<h2>NOS SUGGESTIONS POUR TOI</h2>
+<h2 *ngIf="activites.length>0">NOS SUGGESTIONS POUR TOI</h2>
 <ul class="activites">
   <li *ngFor="let activite of activites">
     <div class="card" style="width: 26rem;">
@@ -8,7 +8,7 @@
       <div class="card-body">
         <a href="activite/{{ activite.idActivite }}">
           <h5 class="card-title">{{ activite.nomActivite }}</h5>
-          <p class="card-text">{{ activite.descriptionActivite }}</p>
+          <p class="card-text">{{ activite.dateActivite }}</p>
         </a>  
       </div>
     </div>
