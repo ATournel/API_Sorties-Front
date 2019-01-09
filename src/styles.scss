@@ -6,3 +6,23 @@ body {
 .logo {
     text-align: center;
 }
+
+@media screen and (min-width: 640px) {
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+.footer {
+    padding-top: 2vh;
+    background-color: #282828;
+    color: #BEBEBE;
+    font-size: 2rem;
+}

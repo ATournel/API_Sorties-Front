@@ -1,0 +1,28 @@
+* {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+a {
+    border: 1px solid black;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 50%;
+}
+
+select {
+    width: 200px;
+}

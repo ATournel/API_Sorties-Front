@@ -18,7 +18,7 @@ export class TagListParamsComponent implements OnInit {
   public deleteTag() {
     const idTag = +this.route.snapshot.paramMap.get('idTag');
     this.userservice.deleteUserTag(idTag).subscribe();
-    this.router.navigateByUrl('/profil');
+    this.router.navigateByUrl('/validate');
   }
 
 }

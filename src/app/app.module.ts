@@ -20,6 +20,7 @@ import { ProfilComponent } from './profil/profil.component';
 import { SuggestionsComponent } from './suggestions/suggestions.component';
 import { TagListParamsComponent } from './tag-list-params/tag-list-params.component';
 import { AddTagComponent } from './add-tag/add-tag.component';
+import { ValidationComponent } from './validation/validation.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   {path: 'profil', component: ProfilComponent},
   {path: 'profil/deleteTag/:idTag', component: TagListParamsComponent},
   {path: 'profil/addTag', component: AddTagComponent},
+  {path: 'validate', component: ValidationComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ]
@@ -49,7 +51,8 @@ const appRoutes: Routes = [
     ProfilComponent,
     SuggestionsComponent,
     TagListParamsComponent,
-    AddTagComponent
+    AddTagComponent,
+    ValidationComponent
   ],
   imports: [
     BrowserModule,

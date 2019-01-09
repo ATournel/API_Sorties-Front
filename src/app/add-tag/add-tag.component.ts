@@ -38,6 +38,6 @@ export class AddTagComponent implements OnInit {
   onSubmit() {
     this.selectedTag = this.registerForm.controls.selectedTag.value;
     this.userservice.addUserTag(this.selectedTag).subscribe();
-    this.router.navigateByUrl('/profil');
+    this.router.navigateByUrl('/validate');
   }
 }

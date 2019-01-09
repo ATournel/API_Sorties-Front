@@ -1,15 +1,13 @@
-<div class="profilHead">
-    <div class="profilPic">
-        <img src='{{ connectedUser.urlPhotoProfil }}'>
-    </div>
-</div>
-<div>
-    <div class="profilInfos">
-        <h3>{{ connectedUser.prenomUser }}</h3>
-        <h3>{{ connectedUser.nomUser }}</h3>
+<div class="content">
+    <div class="card" style="width: 50rem;">
+      <img class="card-img-top" src="{{ connectedUser.urlPhotoProfil }}">
+      <div class="card-body">
+        <h2 class="card-title">{{ connectedUser.prenomUser }}</h2>
+        <h2 class="card-title">{{ connectedUser.nomUser }}</h2>
+      </div>
     </div>
     <div class="userTags">
-        <h2>Mes favoris<a href="/profil/addTag">GERER</a></h2>
+        <h2>Mes favoris<a href="/profil/addTag"><img class="paramLogo" src="https://pngimage.net/wp-content/uploads/2018/06/logo-parametre-png.png"></a></h2>
         <ul class="tagList">
             <li *ngFor="let tag of tags">
                 <p>{{ tag.intituleTag }}</p>   
